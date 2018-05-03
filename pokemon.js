@@ -87,8 +87,7 @@ pokemon_3.addEventListener("click", function displayvalue2(event) {
 class pokemon{
 
 
-     constructor()
-     {
+     constructor(){
          this.abilities1 ="";
          this.abilities2 ="";
          this.defense = "";
@@ -130,8 +129,7 @@ class pokemon{
 
         }
 
-        get_abilities()
-        {
+        get_abilities(){
                   let span1= document.getElementById('span_1');
                   span1.innerHTML="";
                   span1.innerHTML= this.abilities1;
@@ -151,8 +149,7 @@ class pokemon{
         }
 
 
-        get_defense_value()
-        {
+        get_defense_value(){
 
           let span3= document.getElementById('span_3');
           span3.innerHTML="";
@@ -160,8 +157,7 @@ class pokemon{
 
         }
 
-        get_hp_value()
-        {
+        get_hp_value(){
 
 
           let span4= document.getElementById('span_4');
@@ -170,15 +166,13 @@ class pokemon{
 
         }
 
-        get_attack_value()
-        {
+        get_attack_value(){
           let span5= document.getElementById('span_5');
           span5.innerHTML="";
           span5.innerHTML=this.attack;
 
         }
-        get_images(temp)
-        {
+        get_images(temp){
           let image= document.getElementById('my_image');
           let temp1= temp+'.jpg';
           image.src="";
