@@ -9,22 +9,17 @@ let pokemon_3 = document.getElementById('c_pokemon');
 pokemon_1.addEventListener("click", function displayvalue(event) {
 
      event.preventDefault();
-     console.log('pokemon 1');
-     console.log('Inside of addEvent Listener');
-     console.log(document.getElementById('a_pokemon').getAttribute('data-value'));
      let temp1= document.getElementById('a_pokemon').getAttribute('data-value');
 
      let str_normal1 = 'https://pokeapi.co/api/v2/pokemon/'+ temp1 +'/';
-     console.log(str_normal1);
+
      let pokemon1 = new pokemon();
      this.temp=temp1;
      pokemon1.setvalue(str_normal1);
 
      setTimeout(function(){
 
-       console.log('inside of set time out function');
 
-       console.log(temp1);
        pokemon1.get_abilities();
        pokemon1.get_defense_value();
        pokemon1.get_hp_value();
@@ -35,15 +30,14 @@ pokemon_1.addEventListener("click", function displayvalue(event) {
 
 });
 
-pokemon_2.addEventListener("click", function displayvalue1(event) {
+pokemon_2.addEventListener("click", function
+ displayvalue1(event) {
 
        event.preventDefault();
-       console.log('pokemon 2');
-       console.log('Inside of addEvent Listener');
-       console.log(document.getElementById('b_pokemon').getAttribute('data-value'));
+
        let temp2= document.getElementById('b_pokemon').getAttribute('data-value');
        let str_normal2 = 'https://pokeapi.co/api/v2/pokemon/'+ temp2 +'/';
-       console.log(str_normal2);
+
        let pokemon2 = new pokemon();
        pokemon2.setvalue(str_normal2);
 
@@ -61,9 +55,7 @@ pokemon_2.addEventListener("click", function displayvalue1(event) {
 pokemon_3.addEventListener("click", function displayvalue2(event) {
 
        event.preventDefault();
-       console.log('pokemon 3');
-       console.log('Inside of addEvent Listener');
-       console.log(document.getElementById('c_pokemon').getAttribute('data-value'));
+
        let temp3= document.getElementById('c_pokemon').getAttribute('data-value');
        let str_normal3 = 'https://pokeapi.co/api/v2/pokemon/'+ temp3 +'/';
 
@@ -103,28 +95,14 @@ class pokemon{
 
             var req=axios.get(func_str).then(function(myResponse){
 
-                console.log(myResponse);
                 self.abilities1=(myResponse.data.abilities[0].ability.name).toString();
                 self.abilities2=  myResponse.data.abilities[1].ability.name;
-                console.log('debugging');
-                console.log(myResponse.data.stats);
                 self.defense= myResponse.data.stats[3].base_stat;
-
                 self.hp= myResponse.data.stats[5].base_stat;
-
                 self.attack= myResponse.data.stats[4].base_stat;
-
-
-
-                console.log( myResponse.data.moves);
-                console.log(' Move length');
-                console.log(myResponse.data.moves.length);
-
 
           });
 
-          console.log('Inside set function');
-          console.log(this.abilities1);
 
 
         }
@@ -133,18 +111,9 @@ class pokemon{
                   let span1= document.getElementById('span_1');
                   span1.innerHTML="";
                   span1.innerHTML= this.abilities1;
-
-                  console.log('inside of get  function');
-                  console.log(this.abilities1);
-
                   let span2= document.getElementById('span_2');
                   span2.innerHTML="";
                   span2.innerHTML= this.abilities2;
-
-                  console.log('inside of get  function');
-                  console.log(this.abilities2);
-
-
 
         }
 
