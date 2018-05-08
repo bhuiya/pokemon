@@ -1,71 +1,58 @@
 * {
-
-   box-sizing: border-box;
-
+  box-sizing: border-box;
 }
+
 .nav_container {
-
-    background-color: white;
-    padding-top: 5px;
-
-    width:100%;
-    display: flex;
-
+  background-color: white;
+  padding-top: 5px;
+  width: 100%;
+  display: flex;
 }
+
 .nav_container ul {
-
-    display: flex;
-    border-color: white;
-  }
-
+  display: flex;
+  border-color: white;
+}
 
 .nav_container li {
-    list-style: none;
-    padding: 20px;
-    color: white;
-    background-color: #4285F4;
-    border-color: white;
-
+  list-style: none;
+  padding: 20px;
+  color: white;
+  background-color: #4285F4;
+  border-color: white;
 }
-a{
+
+a {
   text-decoration: none;
   color: white;
   font-size: 22px;
   border-color: white;
 }
 
-.h1{
-
-   width: 100%;
-   height: 50px;
-   color: #4285F4;
-   text-align: center;
-   padding-top: 10px;
-   font-family: georgia, serif;
-
+.h1 {
+  width: 100%;
+  height: 50px;
+  color: #4285F4;
+  text-align: center;
+  padding-top: 10px;
+  font-family: georgia, serif;
 }
 
-.image_container{
-
-  display:flex;
+.image_container {
+  display: flex;
 }
 
-.container{
-
-
-   width: 50%;
-   height: 400px;
-   padding-left: 20px;
-   padding-right: 20px;
-   padding-top: 100px;
-   padding-bottom: 20px;
-   font-size: 25px;
+.container {
+  width: 50%;
+  height: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-size: 25px;
 }
 
-
-
-.image{
-
+.image {
   width: 400px;
   height: 400px;
   padding-left: 30px;
@@ -75,100 +62,75 @@ a{
   float: left;
   transition: 2s ease-in all;
   transform: rotate(0deg);
-
 }
+
 .image:hover {
   transition: 2s ease-in all;
   transform: rotate(30deg);
-
 }
+
 @keyframes example {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(30deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
 }
-
-
 
 @media screen and (max-width: 850px) {
-
   .nav_container {
-
-      align-content: center;
-      align-self: auto;
-      justify-content: space-around;
-      text-align: center;
-      background-color: white;
-      padding-top: 5px;
-      display: block;
-
+    align-content: center;
+    align-self: auto;
+    justify-content: space-around;
+    text-align: center;
+    background-color: white;
+    padding-top: 5px;
+    display: block;
   }
-
-
- .h1{
-   width: 70%;
+  .h1 {
+    width: 70%;
     margin: auto;
-
- }
-
-
-
-.nav_container  ul {
-
-       margin: auto;
-       float: none;
-       text-align: center;
-       padding-top: 15px;
-       width: calc(100% - 20px);
-
-   }
-
-
-.nav_container  li {
-      list-style: none;
-      padding: 17px;
-      color: white;
-      background-color: #4285F4;
-      border-color: white;
-
   }
-
-.nav_container  a{
+  .nav_container ul {
+    margin: auto;
+    float: none;
+    text-align: center;
+    padding-top: 15px;
+    width: calc(100% - 20px);
+  }
+  .nav_container li {
+    list-style: none;
+    padding: 17px;
+    color: white;
+    background-color: #4285F4;
+    border-color: white;
+  }
+  .nav_container a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     border-color: white;
     text-align: center;
-
-
   }
-  .nav_div{
-      text-align: center;
-      align-content: center;
-  }
-
-.image_container{
-
-    display:block;
+  .nav_div {
+    text-align: center;
     align-content: center;
-
-}
-
-.image{
-
-   height: 350px;
-   width:400px;
-
-}
-
-
-.container{
-
+  }
+  .image_container {
+    display: block;
+    align-content: center;
+  }
+  .image {
+    height: 350px;
+    width: 400px;
+  }
+  .container {
     margin: auto;
     align-content: center;
     align-self: auto;
     background-position: center;
-    padding-left:10%;
+    padding-left: 10%;
     width: 100%;
     text-align: justify;
-
-}
+  }
