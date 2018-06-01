@@ -36,4 +36,13 @@ Java Script File Function:
             |- pokemon_hp_value: return high point value
             |- return attack value of the specific pokemon
 
+
+            ··* pokemon_abilities: return the ablities of the pokemon.
+            ··* pokemon_defense_value: return defense value
+            ··* pokemon_hp_value: return high point value
+            ··* return attack value of the specific pokemon pokemon_abilities: return the ablities of the pokemon.
+            |- pokemon_defense_value: return defense value
+            |- pokemon_hp_value: return high point value
+            |- return attack value of the specific pokemon
+
    
