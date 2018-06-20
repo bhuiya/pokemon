@@ -1,56 +1,71 @@
-           POKEMON Project
+        # Personal Pokedex
 
-Pokemon is a porject, that is showing differnt pokemon information from the remote webserver. Actually, it is reading JSON data from the remote webserver, parsing listing of array data
-and put into the HTML Browser.
+## Goal:
 
+To create a pokemon trainer showcase website that displays information focused around 3 pokemon chosen by the student using AJAX to retrieve said data. This project is focused on client side technologies.
 
-https://pokeapi.co/ pokemon api have set of rules, 
+## Built With:
+* Object Oriented JavaScript
+* External APIs
+* AJAX
+* jQuery
+* HTML5
+* Sass
+* Bootstrap
 
-   1. Attribute value
-   2. Image link
-   3. Ablity of the pokemon
-   4. Power of the pokemon
-   5. HP value
-   6. Defense value
-
-Project Structure:
-    |- HTML
-    |- CSS
-    |- Java Script file
-
-
-HTML file is used to display pokemon image, CSS file is used for styling and JavaScript file has ablity to pulling JSON data from the remote web server and give back information to the 
-HTML pages.
-
-Java Script File Function:
-
-      Set_function
-
-            |- pokemon setvalue('https://pokeapi.co/api/v2/pokemon/' + pokemon_name + '/';')
-                                'pokemon_name': It could be any pokemon.
-
-       Return_function
- 
-            |- pokemon_abilities: return the ablities of the pokemon.
-            |- pokemon_defense_value: return defense value
-            |- pokemon_hp_value: return high point value
-            |- return attack value of the specific pokemon
+## Features
+* Animated buttons
+* Eyecatching, responsive design
+* Retrieves data from Pokemon API
+* Throws error warning when Pokemon API does not load correctly
 
 
-            ··* pokemon_abilities: return the ablities of the pokemon.
-            ··* pokemon_defense_value: return defense value
-            ··* pokemon_hp_value: return high point value
-            ··* return attack value of the specific pokemon pokemon_abilities: return the ablities of the pokemon.
-            |- pokemon_defense_value: return defense value
-            |- pokemon_hp_value: return high point value
-            |- return attack value of the specific pokemon
-    
-          
-   # H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
 
- git hub url: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+### Learning Objectives:
+
+Upon successful completion of this project, the student will demonstrate their understanding of Object Oriented Javascript, APIs, AJAX, grid systems, UI/UX and deployment via Github Pages.
+
+### Instructions:
+
+Welcome to the poke showcase! If you are not familiar with Pokemon please skim thru [this website](https://www.pokemon.com/us/). Imagine yourself as an up and coming pokemon trainer. In order to raise brand awareness you have decided to create a website showcasing your pokemon. However, all the pokemon information you need to access is stored in a server. Use the [Pokemon API](https://pokeapi.co/)o gather information regarding your chosen pokemon using ajax calls. This website will house your roster of at least three pokemon and at least four of their statistics to display to other trainers. Please keep your code understandable and clean because this is a precursor the to next project which has you work in a group.
+
+Be creative in your presentation of the information.
+
+### Challenge:
+
+Try showing extra pieces of information such as:
+
+* move related information
+	* priority
+	* power
+	* accuracy
+* and have this information be hidden by default and then have it display on a button click
+	* use an animation with the reveal
+
+### Completion Requirements:
+
+A completed assignment should:
+
+* represent a fictitious trainer name
+* be deployed to Github pages
+* have each pokemon stored within a Pokemon object and have properties for
+	* hp - integer
+	* attacked - integer
+	* defense - integer
+	* abilities - array of strings
+* have all pokemon stored within a container object named after your trainer name
+	* accepts no parameters
+	* returns an array of Pokemon objects
+	* accepts 1 parameter called name
+	* returns a Pokemon object housing information for the pokemon it found
+	* have a method named all
+	* have a method named get
+* have relevant information presented on at least 3 different pokemon
+* retrieve pokemon information via the Pokemon API
+* retrieve information using javascript ajax calls
+* display information regarding the pokemonâ€™s:
+	* hp
+	* attack
+	* defense
+	* abilities
+* use a grid system
